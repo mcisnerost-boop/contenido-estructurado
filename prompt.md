@@ -23,39 +23,38 @@ CSS
 
 Quiero construir un documento digital sobre:
 
-**[TEMA]**
+**[Libros de Agatha Christie-Colección que salió del 2023-2025]**
 
 Necesito organizar información sobre:
 
-**[TIPO DE CONTENIDO O COLECCIÓN]**
+**[Colección de libros de Agatha Christies del Planeta de agostini, sobre sus tomos, sus fechas de entrega, cuántos libros son, cuándo salieron, quien los escribió, datos sobre la autora del libro, datos sobre el precio, el estilo de libros: portadas at deco; precio de los libros y  estrategias de marketing]**
 
 Antes de generar HTML, investiga y estructura la información.
 
 ## Objetivo
 
-Construye un documento de información estructurada que pueda utilizarse
-posteriormente para generar una página web.
+Construye un documento de información estructurada que pueda utilizarse para la información de libros de una colección especial que salió hace unos años y la diseñadora del sitio de la página web ha comprado no todos pero una parte de ellos y porque también conoce las novelas de Agatha Cristhie una de sus autoras favoritas posteriormente para generar una página web.
 
 ## Estructura
 
 Cada elemento debe incluir los siguientes campos:
 
-- [CAMPO 1]
-- [CAMPO 2]
-- [CAMPO 3]
-- [CAMPO 4]
-- [CAMPO 5]
+- [Libros]
+- [Estilo]
+- [Precio]
+- [Autora]
 
 Todos los elementos deben mantener exactamente la misma estructura.
 
 ## Reglas
 
 - Organiza la información de manera consistente.
-- No inventes datos.
-- Si un dato no está disponible, indícalo.
+- No inventes datos, porfavor consulta fuentes vibles y agregalas al documento.
+- Si un dato no está disponible, indícalo y busca alternativas de páginas donde podrían hablar sobre el tema o que sean relevantes.
 - Mantén una jerarquía clara.
-- Utiliza títulos y subtítulos cuando sea necesario.
-- Utiliza listas cuando exista información repetitiva.
+- Utiliza títulos, subtítulos, negritas, comillas, citas y referencias cuando sea necesario.
+- Utiliza listas cuando exista información repetitiva o cuándo se deban enlistar libros, películas o series.
+- Si se repite información que este ordenada dependiendo de la base de los elementos.
 - Conserva enlaces a fuentes o recursos relevantes cuando corresponda.
 - Prioriza fuentes confiables.
 - No agregues diseño.
@@ -77,12 +76,11 @@ Ordena los elementos utilizando el siguiente criterio:
 Ejemplos:
 
 - cronológico;
-- cronológico descendente;
-- alfabético;
 - por categoría;
-- por relevancia;
-- por tamaño;
-- por ubicación.
+- por color; 
+- por título; 
+- por fecha de entrega;
+- por número de publicación.
 
 Define claramente:
 
@@ -161,7 +159,7 @@ La estructura debe ser consistente.
 
 No pedir:
 
-> Hazme una página sobre [tema].
+> Hazme una página sobre [Libros de Agatha Christie-Colección que salió del 2023-2025].
 
 Separar el problema:
 
