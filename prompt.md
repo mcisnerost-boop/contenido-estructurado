@@ -492,5 +492,4 @@ Separar el problema:
 
 La IA ayuda a procesar y transformar información.
 
-La estructura y las decisiones del proyecto siguen siendo responsabilidad
-de quien diseña.
+La estructura y las decisiones sobre qué información pertenece al proyecto, cómo se interpreta y cómo se organiza son responsabilidad de quien diseña.
