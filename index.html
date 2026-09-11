@@ -1,136 +1,260 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!--
-    HEAD
-    Contiene información sobre el documento.
-    Aquí podemos definir metadata, título, favicon y archivos externos.
-  -->
-
   <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <meta
-    name="description"
-    content="Documento base para estudiar estructura HTML, semántica y cajas."
-  >
-  <title>HTML, estructura y cajas</title>
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico">
-  <!-- Hoja de estilos externa -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Archivo de la colección de Agatha Christie publicada por Planeta DeAgostini México.">
+  <title>Agatha Christie: El archivo de los misterios</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
-  <!--
-    HEADER
-    Contenido introductorio del documento.
-  -->
   <header>
-
-    <h1>HTML, estructura y cajas</h1>
-
-    <p>
-      Los elementos HTML generan cajas, pero cada elemento tiene una función dentro del documento.
-    </p>
-
-    <!--
-      NAV
-      Contiene enlaces principales de navegación.
-    -->
-    <nav>
-      <a href="#elementos">Elementos</a>
-      <a href="#estructura">Estructura</a>
-      <a href="#jerarquia">Jerarquía</a>
+    <p>Archivo de la colección Planeta DeAgostini México, 2023-2025</p>
+    <h1>Agatha Christie: El archivo de los misterios</h1>
+    <p><strong>Cada pista conduce a una historia. Cada historia esconde un misterio.</strong></p>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#test">¿Qué misterio eres?</a></li>
+        <li><a href="#coleccion">La colección</a></li>
+        <li><a href="#autora">La autora</a></li>
+        <li><a href="#lugares">Los lugares</a></li>
+        <li><a href="#adaptaciones">Películas y series</a></li>
+      </ul>
     </nav>
-
   </header>
 
-  <!--
-    MAIN
-    Contiene el contenido principal del documento.
-  -->
   <main>
+    <section id="test" aria-labelledby="test-titulo">
+      <h2 id="test-titulo">¿Qué misterio eres?</h2>
+      <p>Responde estas preguntas y descubre qué historia puede esconderse detrás de tu forma de pensar.</p>
+      <form>
+        <fieldset>
+          <legend>01. Cuando llegas a un lugar desconocido...</legend>
+          <label><input type="radio" name="pregunta-01"> Observo todo antes de hablar.</label>
+          <label><input type="radio" name="pregunta-01"> Empiezo a hacer preguntas.</label>
+          <label><input type="radio" name="pregunta-01"> Me dejo llevar por la situación.</label>
+          <label><input type="radio" name="pregunta-01"> Busco a alguien que parezca sospechoso.</label>
+        </fieldset>
+        <fieldset>
+          <legend>02. Si algo no tiene sentido...</legend>
+          <label><input type="radio" name="pregunta-02"> Intento encontrar el detalle que todos ignoraron.</label>
+          <label><input type="radio" name="pregunta-02"> Pregunto directamente qué está pasando.</label>
+          <label><input type="radio" name="pregunta-02"> Confío en mi intuición.</label>
+          <label><input type="radio" name="pregunta-02"> Empiezo a sospechar de todos.</label>
+        </fieldset>
+        <fieldset>
+          <legend>03. ¿Cuál escenario elegirías para resolver un misterio?</legend>
+          <label><input type="radio" name="pregunta-03"> Un tren.</label>
+          <label><input type="radio" name="pregunta-03"> Una casa aislada.</label>
+          <label><input type="radio" name="pregunta-03"> Un hotel.</label>
+          <label><input type="radio" name="pregunta-03"> Un barco.</label>
+        </fieldset>
+        <fieldset>
+          <legend>04. ¿Qué tipo de detective serías?</legend>
+          <label><input type="radio" name="pregunta-04"> El que analiza cada pista.</label>
+          <label><input type="radio" name="pregunta-04"> El que observa a las personas.</label>
+          <label><input type="radio" name="pregunta-04"> El que conecta historias y secretos.</label>
+          <label><input type="radio" name="pregunta-04"> El que nunca deja de hacer preguntas.</label>
+        </fieldset>
+        <fieldset>
+          <legend>05. ¿Qué te atrae más de una historia?</legend>
+          <label><input type="radio" name="pregunta-05"> Un crimen imposible.</label>
+          <label><input type="radio" name="pregunta-05"> Los secretos de los personajes.</label>
+          <label><input type="radio" name="pregunta-05"> Los giros inesperados.</label>
+          <label><input type="radio" name="pregunta-05"> Descubrir quién lo hizo.</label>
+        </fieldset>
+      </form>
 
-    <!--
-      SECTION
-      Agrupa contenido relacionado por un mismo tema.
-    -->
-    <section id="elementos">
+      <details id="consulta-respuestas">
+        <summary>Consulta tus respuestas</summary>
+        <section aria-labelledby="resultados-titulo">
+          <h3 id="resultados-titulo">Resultados</h3>
+          <p>Después de contestar las cinco preguntas, abre este apartado para consultar las posibilidades de tu resultado.</p>
+          <dl>
+            <dt>Asesinato en el Orient Express</dt>
+            <dd>Eres observador/a y analítico/a. Te gusta reunir pistas, encontrar contradicciones y llegar a una conclusión antes que los demás.</dd>
+            <dt>Y no quedó ninguno</dt>
+            <dd>Eres intuitivo/a y desconfiado/a. No te conformas con la primera explicación y sabes que detrás de cada persona puede existir un secreto.</dd>
+            <dt>La casa torcida</dt>
+            <dd>Eres curioso/a y observador/a. Te interesan las relaciones entre las personas y lo oculto detrás de una apariencia normal.</dd>
+            <dt>Muerte en el Nilo</dt>
+            <dd>Eres estratégico/a y atento/a a los detalles. Te gustan las historias donde las relaciones, los secretos y los motivos importan tanto como las pistas.</dd>
+            <dt>Muerte en la vicaría</dt>
+            <dd>Eres perspicaz y curioso/a. Te encanta observar a las personas y descubrir aquello que intentan esconder.</dd>
+            <dt>El espejo se rajó de lado a lado</dt>
+            <dd>Eres sensible a los detalles. Te interesa entender qué hay detrás de las apariencias y cómo el pasado puede cambiarlo todo.</dd>
+            <dt>Tragedia en tres actos</dt>
+            <dd>Eres teatral y analítico/a. Te gustan las historias llenas de personajes, sospechas y giros inesperados.</dd>
+            <dt>Noche eterna</dt>
+            <dd>Eres aventurero/a y misterioso/a. Te atraen las historias poco convencionales y de atmósfera inquietante.</dd>
+          </dl>
+        </section>
+      </details>
 
-      <h2>Los elementos HTML son cajas</h2>
-
-      <p>
-        Cada elemento ocupa un espacio dentro del documento.
-        El navegador calcula su tamaño, posición y relación con otros elementos.
-      </p>
-
-      <!--
-        ARTICLE
-        Representa una unidad de contenido dentro de esta sección.
-      -->
-      <article>
-
-        <h3>No todas las cajas son iguales</h3>
-
-        <p>
-          Un título, un párrafo y un enlace generan cajas,
-          pero tienen funciones diferentes.
-        </p>
-
-        <a href="#">Esto es un enlace</a>
-
-      </article>
-
+      <aside aria-labelledby="presentacion-titulo">
+        <h3 id="presentacion-titulo">¿Quién es Agatha Christie?</h3>
+        <p>Agatha Christie (1891-1976) fue una escritora británica reconocida por sus novelas policíacas y de misterio. Es la creadora de Hércules Poirot y Miss Marple, dos de los personajes más importantes de la literatura detectivesca.</p>
+      </aside>
     </section>
 
-    <section id="estructura">
+    <details id="coleccion">
+      <summary>La colección</summary>
+      <section aria-labelledby="coleccion-titulo">
+        <h2 id="coleccion-titulo">La colección</h2>
+      <p>La colección reúne 85 tomos. Este catálogo está ordenado por fecha de salida para mostrar cómo se publicó entre 2023, 2024 y 2025.</p>
+      <p>Los resúmenes editoriales completos deben consultarse en la página oficial de Planeta DeAgostini. La información disponible en este archivo se presenta como referencia y no sustituye la sinopsis editorial de cada obra.</p>
+      <p><a href="https://www.planetadeagostini.com.mx/mx/culturales/agatha-christie">Lee más sobre esta obra misteriosa en Planeta DeAgostini</a></p>
+      <ol>
+        <li><details><summary>Asesinato en el Orient Express</summary><article><p><time datetime="2023-02-27">27 de febrero de 2023</time> · Tomo 1</p><blockquote>Lo imposible no pudo haber sucedido, por lo tanto lo imposible debe ser posible a pesar de las apariencias.</blockquote><p><strong>Resumen:</strong> Hércules Poirot debe resolver un asesinato cometido en un tren detenido por la nieve, donde todos los pasajeros pueden ser sospechosos.</p><a href="https://www.planetadeagostini.com.mx/mx/culturales/agatha-christie">Lee más sobre esta obra misteriosa</a></article></details></li>
+        <li><details><summary>Muerte en el Nilo</summary><article><p><time datetime="2023-03-13">13 de marzo de 2023</time> · Tomo 2</p><blockquote>La tranquilidad de un crucero por el Nilo se ve destrozada por el descubrimiento de que Linnet Ridgeway recibió un disparo en la cabeza. Era joven, elegante y hermosa, una chica que lo tenía todo, hasta que perdió la vida.</blockquote></article></details></li>
+        <li><details><summary>Y no quedó ninguno</summary><article><p><time datetime="2023-03-27">27 de marzo de 2023</time> · Tomo 3</p><blockquote>En su asiento del vagón de primera clase para fumadores, el juez Wargrave, retirado hacía poco de los tribunales, mordisqueaba su cigarro mientras leía con interés la sección política de The Times.</blockquote></article></details></li>
+        <li><details><summary>El asesinato de Roger Ackroyd</summary><article><p><time datetime="2023-04-10">10 de abril de 2023</time> · Tomo 4</p><blockquote>La verdad, por fea que sea en sí misma, siempre es curiosa y hermosa para quienes la buscan.</blockquote></article></details></li>
+        <li><details><summary>Se anuncia un asesinato</summary><article><p><time datetime="2023-04-24">24 de abril de 2023</time> · Tomo 5</p><blockquote>Las personas con un resentimiento contra el mundo siempre son peligrosas. Parecen pensar que la vida les debe algo.</blockquote></article></details></li>
+        <li><details><summary>La casa torcida</summary><article><p><time datetime="2023-05-08">8 de mayo de 2023</time> · Tomo 6</p><blockquote>En los casos de asesinato, como sabes, Charles, lo obvio suele ser la solución correcta.</blockquote></article></details></li>
+        <li><details><summary>Cinco cerditos</summary><article><p><time datetime="2023-05-22">22 de mayo de 2023</time> · Tomo 7</p><blockquote>Las mujeres observan de un modo inconsciente mil detalles íntimos, sin saber lo que hacen. Sus subconscientes mezclan esas cositas unas con otras y a eso le llaman intuición.</blockquote></article></details></li>
+        <li><details><summary>Muerte en la vicaría</summary><article><p><time datetime="2023-06-05">5 de junio de 2023</time> · Tomo 8</p><blockquote>Acababa de trinchar unos pedazos de carne de buey, bastante dura por cierto, cuando al volver a sentarme observé, con un espíritu que mal cuadraba a mi hábito, que quien asesinara al coronel Protheroe prestaría un buen servicio a la humanidad.</blockquote></article></details></li>
+        <li><details><summary>El misterio de la guía de ferrocarriles</summary><article><p><time datetime="2023-06-19">19 de junio de 2023</time> · Tomo 9</p><blockquote>Es difícil saber exactamente dónde empieza esta historia, pero he elegido cierto miércoles, a la hora de la comida, en la vicaría.</blockquote></article></details></li>
+        <li><details><summary>Un cadáver en la biblioteca</summary><article><p><time datetime="2023-07-03">3 de julio de 2023</time> · Tomo 10</p><blockquote>Durante años, me he planteado escribir lo que podríamos llamar una variación sobre alguno de estos tópicos. La biblioteca debía ser corriente; el cadáver, en cambio, debía aparecer como un elemento muy inverosímil y sensacional.</blockquote></article></details></li>
+        <li><details><summary>El misterioso caso de Styles</summary><article><p><time datetime="2023-07-17">17 de julio de 2023</time> · Tomo 11</p><blockquote>El revuelo que despertó el que en su momento fue conocido como 'El caso de Styles' se ha calmado. Sin embargo, en vista de la resonancia mundial que tuvo, mi amigo Poirot y la propia familia me han pedido que escriba toda la historia.</blockquote></article></details></li>
+        <li><details><summary>Cianuro espumoso</summary><article><p><time datetime="2023-07-31">31 de julio de 2023</time> · Tomo 12</p><blockquote>Iris Marle estaba pensando en su hermana Rosemary. Durante cerca de un año había intentado deliberadamente desterrar de sus pensamientos el recuerdo de Rosemary.</blockquote></article></details></li>
+        <li><details><summary>Muerte bajo el sol</summary><article><p><time datetime="2023-08-14">14 de agosto de 2023</time> · Tomo 13</p><blockquote>En mi opinión no hay puerto de mar al sur de Inglaterra más atractivo que Saint Loo, y comprendo el entusiasmo de sus huéspedes estivales, que lo llaman la reina de las playas.</blockquote></article></details></li>
+        <li><details><summary>El espejo se rajó de lado a lado</summary><article><p><time datetime="2023-08-29">29 de agosto de 2023</time> · Tomo 22</p><blockquote>Miss Jane Marple estaba sentada junto a la ventana que se abría al jardín, en otros tiempos un motivo de orgullo para su dueña. Ya no era así.</blockquote></article></details></li>
+        <li><details><summary>Némesis</summary><article><p><time datetime="2023-09-12">12 de septiembre de 2023</time> · Tomo 23</p><blockquote>Miss Jane Marple tenía la costumbre de leer por las tardes su segundo periódico. Cada mañana recibía en su casa dos periódicos.</blockquote></article></details></li>
+        <li><details><summary>El misterio de Pale Horse</summary><article><p><time datetime="2023-09-26">26 de septiembre de 2023</time> · Tomo 24</p><blockquote>A mi juicio hay dos maneras de acercarse a este extraño asunto de Pale Horse. A pesar del dicho del Rey Blanco es difícil hacerlo con simplicidad.</blockquote></article></details></li>
+        <li><details><summary>Misterio en el Caribe</summary><article><p><time datetime="2023-10-10">10 de octubre de 2023</time> · Tomo 28</p><blockquote>Fíjese usted en todo cuanto se habla de Kenia —dijo el comandante Palgrave—. Gente que no conoce aquello en absoluto, haciendo toda clase de peregrinas afirmaciones.</blockquote></article></details></li>
+        <li><details><summary>Tragedia en tres actos</summary><article><p><time datetime="2023-10-24">24 de octubre de 2023</time> · Tomo 29</p><blockquote>Mr. Satterthwaite se sentó en la terraza de Nido de Cuervos y contempló cómo su anfitrión, sir Charles Cartwright, subía por el sendero que conducía al mar.</blockquote></article></details></li>
+        <li><details><summary>Noche eterna</summary><article><p><time datetime="2023-11-07">7 de noviembre de 2023</time> · Tomo 30</p><blockquote>En el fin está el principio… Ésa es una cita que he oído muchas veces. No suena mal, pero en realidad, ¿qué significa?</blockquote></article></details></li>
+        <li><details><summary>Un crimen dormido</summary><article><p><time datetime="2023-11-21">21 de noviembre de 2023</time> · Tomo 27</p><blockquote>Gwenda Reed permanecía de pie, al borde del muelle, temblando de frío. Los muelles, los cobertizos de la aduana y todo lo que alcanzaba a ver de Inglaterra se balanceaban suavemente.</blockquote></article></details></li>
+        <li><details><summary>Después del funeral</summary><article><p><time datetime="2023-12-05">5 de diciembre de 2023</time> · Tomo 25</p><blockquote>El viejo Lanscombe, con su andar vacilante, fue de una habitación a otra subiendo las persianas. De vez en cuando sus ojillos de reumático miraban a través de los cristales.</blockquote></article></details></li>
+        <li><details><summary>Inocencia trágica</summary><article><p><time datetime="2023-12-12">12 de diciembre de 2023</time> · Tomo 26</p><blockquote>Anochecía cuando llegó al transbordador. Podría haber estado allí mucho antes. La verdad era que lo había retrasado todo lo posible.</blockquote></article></details></li>
+        <li><details><summary>El hombre del traje color castaño</summary><article><p><time datetime="2023-12-19">19 de diciembre de 2023</time> · Tomo 32</p><blockquote>Era alrededor de medianoche cuando un hombre atravesaba la plaza de la Concordia. A pesar del magnífico abrigo que cubría su raquítico cuerpo, había en él algo ruin y miserable.</blockquote></article></details></li>
+        <li><details><summary>El truco de los espejos</summary><article><p><time datetime="2023-12-26">26 de diciembre de 2023</time> · Tomo 33</p><blockquote>Tras alejarse unos pasos del espejo, Mistress Van Rydock exhaló un suspiro. 'Bueno, tendrá que ser este —murmuró—. ¿Te parece bien, Jane?'</blockquote></article></details></li>
+        <li><details><summary>Sangre en la piscina</summary><article><p><time datetime="2024-01-02">2 de enero de 2024</time> · Tomo 34</p><blockquote>Cierto viernes, a las seis y trece de la mañana, Lucy Angkatell abrió los párpados, contempló el nuevo día con unos ojos azules de sorprendente tamaño.</blockquote></article></details></li>
+        <li><details><summary>Cita con la muerte</summary><article><p><time datetime="2024-01-09">9 de enero de 2024</time> · Tomo 14</p><blockquote>¿No comprendes que es necesario matarla? La pregunta flotó en la quietud de la noche, dio la impresión de que permanecía un momento inerte en el aire y finalmente se alejó hacia el mar Muerto.</blockquote></article></details></li>
+        <li><details><summary>Peligro inminente</summary><article><p><time datetime="2024-01-16">16 de enero de 2024</time> · Tomo 15</p><blockquote>El sol de septiembre caía de lleno en el aeródromo de Le Bourget mientras los pasajeros cruzaban el campo y subían al correo aéreo Prometheus.</blockquote></article></details></li>
+        <li><details><summary>Muerte en las nubes</summary><article><p><time datetime="2024-01-23">23 de enero de 2024</time> · Tomo 16</p><blockquote>Jane Grey fue de las primeras en entrar y ocupó el asiento número 16. Algunos pasajeros entraron por la puerta central y, pasando por delante de la angosta repostería y de los dos lavabos, fueron a ocupar la parte delantera del aparato.</blockquote></article></details></li>
+        <li><details><summary>Asesinato en Mesopotamia</summary><article><p><time datetime="2024-01-30">30 de enero de 2024</time> · Tomo 17</p><blockquote>Los hechos cuya crónica se incluye en esta narración ocurrieron hace unos cuatro años. Determinadas circunstancias han hecho necesario, en mi opinión, que se hiciera público un relato íntegro de los mismos.</blockquote></article></details></li>
+        <li><details><summary>El tren de las 4:50</summary><article><p><time datetime="2024-02-06">6 de febrero de 2024</time> · Tomo 18</p><blockquote>Mrs. McGillicuddy corría desalentada por el andén tras el mozo que le llevaba la maleta. Era baja y gruesa, y el mozo alto y de paso largo.</blockquote></article></details></li>
+        <li><details><summary>Cartas sobre la mesa</summary><article><p><time datetime="2024-02-13">13 de febrero de 2024</time> · Tomo 19</p><blockquote>Existe la idea, bastante generalizada, de que una novela policíaca tiene cierto parecido a una carrera de caballos, pues como ésta, toman la salida un determinado número de participantes.</blockquote></article></details></li>
+        <li><details><summary>El caso de los anónimos</summary><article><p><time datetime="2024-02-20">20 de febrero de 2024</time> · Tomo 20</p><blockquote>Siempre resulta agradable plantear un tema clásico y ver lo que puede hacerse con él. En esta ocasión, el tema de la pluma que destila veneno sigue las líneas generales de otros casos bien conocidos.</blockquote></article></details></li>
+        <li><details><summary>Telón: El último caso de Poirot</summary><article><p><time datetime="2024-02-27">27 de febrero de 2024</time> · Tomo 21</p><blockquote>¿Quién no ha sufrido alguna vez un repentino sobresalto al revivir una vieja experiencia o al sentir una antigua emoción? 'He hecho esto antes…' ¿Por qué esas palabras siempre nos conmueven tan profundamente?</blockquote></article></details></li>
+        <li><details><summary>Matar es fácil</summary><article><p><time datetime="2024-03-05">5 de marzo de 2024</time> · Tomo 35</p><blockquote>¡Inglaterra! ¡Otra vez Inglaterra después de tantos años! ¿Cómo se la iba a encontrar? Luke Fitzwilliam se hizo esa pregunta al descender por la pasarela del barco.</blockquote></article></details></li>
+        <li><details><summary>El misterio del tren azul</summary><article><p><time datetime="2024-03-12">12 de marzo de 2024</time> · Tomo 31</p><blockquote>Nadina, la bailarina que había conquistado París, se meció al compás de los aplausos e hizo reverencias una y otra vez.</blockquote></article></details></li>
+        <li><details><summary>La muerte visita al dentista</summary><article><p><time datetime="2024-03-19">19 de marzo de 2024</time> · Tomo 36</p><blockquote>Mr. Morley no estaba de muy buen humor aquella mañana. Se quejó de la calidad del jamón y del café, diciendo que tenía aspecto de barro líquido.</blockquote></article></details></li>
+        <li><details><summary>Una visita inesperada</summary><article><p><time datetime="2024-03-26">26 de marzo de 2024</time> · Tomo 37</p><blockquote>Poco antes de medianoche de un gélido día de noviembre, los jirones de niebla oscurecían parte de una carretera oscura, estrecha y rodeada de árboles en Gales del Sur.</blockquote></article></details></li>
+        <li><details><summary>Un puñado de centeno</summary><article><p><time datetime="2024-04-02">2 de abril de 2024</time> · Tomo 38</p><blockquote>A Miss Somers le tocaba hacer el té. Somers era la más nueva y la menos eficiente de las mecanógrafas. Ya no era joven y su rostro, que revelaba una ligera preocupación, recordaba al de una oveja.</blockquote></article></details></li>
+        <li><details><summary>¿Por qué no le preguntan a Evans?</summary><article><p><time datetime="2024-04-09">9 de abril de 2024</time> · Tomo 39</p><blockquote>Bobby Jones empuñó el palo de golf, tocó ligeramente la bola, inclinó despacio el palo hacia atrás y luego dio un golpe fuerte con la rapidez de un rayo.</blockquote></article></details></li>
+        <li><details><summary>Los cuatro grandes</summary><article><p><time datetime="2024-04-16">16 de abril de 2024</time> · Tomo 40</p><blockquote>Conozco gente que lo pasa bien en cualquier travesía del canal de la Mancha, personas que se sientan tranquilamente en una silla de cubierta.</blockquote></article></details></li>
+        <li><details><summary>Hacia cero</summary><article><p><time datetime="2024-04-23">23 de abril de 2024</time> · Tomo 41</p><blockquote>Casi todas las personas que se hallaban reunidas alrededor de la chimenea eran abogados o tenían interés por la Ley.</blockquote></article></details></li>
+        <li><details><summary>Navidades trágicas</summary><article><p><time datetime="2024-05-02">2 de mayo de 2024</time> · Tomo 42</p><blockquote>Stephen se levantó el cuello del abrigo mientras avanzaba apresuradamente por el andén. Una tenue niebla llenaba la estación.</blockquote></article></details></li>
+        <li><details><summary>Un triste ciprés</summary><article><p><time datetime="2024-05-07">7 de mayo de 2024</time> · Tomo 43</p><blockquote>Elinor Katherine Carlisle: está usted acusada de haber asesinado a Mary Gerrard el veintisiete de julio pasado. ¿Se confiesa usted culpable o inocente?</blockquote></article></details></li>
+        <li><details><summary>La venganza de Nofret</summary><article><p><time datetime="2024-05-14">14 de mayo de 2024</time> · Tomo 44</p><blockquote>Renisenb contemplaba el Nilo. Oía en la distancia las voces de sus hermanos Yahmose y Sobek, que discutían sobre si determinados diques necesitaban ser reparados o no.</blockquote></article></details></li>
+        <li><details><summary>La muerte de Lord Edgware</summary><article><p><time datetime="2024-05-21">21 de mayo de 2024</time> · Tomo 45</p><blockquote>El público es sumamente olvidadizo. El asesinato de George Alfred Saint Vincent Marsh, cuarto barón de Edgware, que tan intensamente apasionó a la opinión pública, ha pasado ya al olvido.</blockquote></article></details></li>
+        <li><details><summary>Destino desconocido</summary><article><p><time datetime="2024-05-28">28 de mayo de 2024</time> · Tomo 46</p><blockquote>El hombre sentado tras el escritorio desplazó el pesado pisapapeles de cristal diez centímetros a su derecha. Su rostro mostraba una expresión más impasible que pensativa.</blockquote></article></details></li>
+        <li><details><summary>En el Hotel Bertram</summary><article><p><time datetime="2024-06-04">4 de junio de 2024</time> · Tomo 47</p><blockquote>En el corazón del West End, hay un gran número de rincones discretos, desconocidos para casi todos excepto para los taxistas.</blockquote></article></details></li>
+        <li><details><summary>Tercera muchacha</summary><article><p><time datetime="2024-06-11">11 de junio de 2024</time> · Tomo 48</p><blockquote>Norma estaba sentada en el suelo, con las piernas cruzadas, y escribía en un cuaderno. De vez en cuando se mordía el lápiz y fruncía el ceño.</blockquote></article></details></li>
+        <li><details><summary>El cuadro</summary><article><p><time datetime="2024-06-18">18 de junio de 2024</time> · Tomo 49</p><blockquote>El mayordomo abrió la puerta del estudio y anunció con voz solemne: 'Sir Claude Amory'.</blockquote></article></details></li>
+        <li><details><summary>El testigo mudo</summary><article><p><time datetime="2024-06-25">25 de junio de 2024</time> · Tomo 50</p><blockquote>Bella Arundell, la actriz, era una mujer de mediana edad, pero todavía muy atractiva. Sus ojos oscuros brillaban con inteligencia.</blockquote></article></details></li>
+        <li><details><summary>El secreto de Chimneys</summary><article><p><time datetime="2024-07-02">2 de julio de 2024</time> · Tomo 51</p><blockquote>El joven que conducía el coche deportivo se inclinó hacia adelante y aumentó la velocidad. Le gustaba correr.</blockquote></article></details></li>
+        <li><details><summary>Un gato en el palomar</summary><article><p><time datetime="2024-07-10">10 de julio de 2024</time> · Tomo 52</p><blockquote>Lady Stubbs suspiró y se recostó en la silla. 'Es tan difícil saber qué hacer con todo esto', dijo.</blockquote></article></details></li>
+        <li><details><summary>Miss Marple y los 13 problemas</summary><article><p><time datetime="2024-07-17">17 de julio de 2024</time> · Tomo 53</p><blockquote>El Club de los Martes se reunía todos los martes por la noche en la casa de Miss Marple.</blockquote></article></details></li>
+        <li><details><summary>Intriga en Bagdad</summary><article><p><time datetime="2024-07-24">24 de julio de 2024</time> · Tomo 54</p><blockquote>Victoria Jones se despertó con la sensación de que algo iba mal. Se sentó en la cama y miró a su alrededor.</blockquote></article></details></li>
+        <li><details><summary>El templete de Nasse-House</summary><article><p><time datetime="2024-07-31">31 de julio de 2024</time> · Tomo 55</p><blockquote>El templete se alzaba al final del jardín, junto al agua. Era una estructura blanca y elegante.</blockquote></article></details></li>
+        <li><details><summary>El misterio de las siete esferas</summary><article><p><time datetime="2024-08-07">7 de agosto de 2024</time> · Tomo 56</p><blockquote>Anthony Cade se despertó con la sensación de que algo había cambiado. La habitación estaba en silencio.</blockquote></article></details></li>
+        <li><details><summary>La señora McGinty ha muerto</summary><article><p><time datetime="2024-08-14">14 de agosto de 2024</time> · Tomo 57</p><blockquote>La señora McGinty había muerto de un modo muy prosaico: alguien la había golpeado en la cabeza.</blockquote></article></details></li>
+        <li><details><summary>El misterio de Sans Souci</summary><article><p><time datetime="2024-08-21">21 de agosto de 2024</time> · Tomo 58</p><blockquote>El Sans Souci era un pequeño hotel en la costa sur. Los huéspedes llegaban y se iban.</blockquote></article></details></li>
+        <li><details><summary>Los elefantes pueden recordar</summary><article><p><time datetime="2024-08-28">28 de agosto de 2024</time> · Tomo 59</p><blockquote>Los elefantes pueden recordar, dijo Poirot. Es un hecho bien conocido.</blockquote></article></details></li>
+        <li><details><summary>El misterioso señor Brown</summary><article><p><time datetime="2024-09-04">4 de septiembre de 2024</time> · Tomo 60</p><blockquote>El señor Brown era un hombre misterioso. Nadie sabía realmente quién era.</blockquote></article></details></li>
+        <li><details><summary>Asesinato en el campo de golf</summary><article><p><time datetime="2024-09-11">11 de septiembre de 2024</time> · Tomo 61</p><blockquote>El campo de golf se extendía ante ellos, verde y bien cuidado. Era una mañana tranquila.</blockquote></article></details></li>
+        <li><details><summary>El misterio de Sittaford</summary><article><p><time datetime="2024-09-18">18 de septiembre de 2024</time> · Tomo 62</p><blockquote>La mesa se movió lentamente. Las letras del alfabeto aparecieron una por una.</blockquote></article></details></li>
+        <li><details><summary>Los relojes</summary><article><p><time datetime="2024-09-25">25 de septiembre de 2024</time> · Tomo 63</p><blockquote>Había relojes por todas partes. Doce relojes en total, todos marcando horas diferentes.</blockquote></article></details></li>
+        <li><details><summary>Los últimos casos de Miss Marple</summary><article><p><time datetime="2024-10-02">2 de octubre de 2024</time> · Tomo 64</p><blockquote>Miss Marple observaba el mundo desde su ventana. Todo había cambiado tanto.</blockquote></article></details></li>
+        <li><details><summary>Asesinato en la calle Hickory</summary><article><p><time datetime="2024-10-09">9 de octubre de 2024</time> · Tomo 65</p><blockquote>La casa de la calle Hickory era una residencia estudiantil tranquila. Hasta esa mañana.</blockquote></article></details></li>
+        <li><details><summary>La telaraña</summary><article><p><time datetime="2024-10-16">16 de octubre de 2024</time> · Tomo 66</p><blockquote>Clarissa Hailsham-Brown estaba sola en la casa. Su marido había salido.</blockquote></article></details></li>
+        <li><details><summary>Las manzanas</summary><article><p><time datetime="2024-10-23">23 de octubre de 2024</time> · Tomo 69</p><blockquote>Las manzanas doradas brillaban en el árbol. Era una tarde de otoño perfecta.</blockquote></article></details></li>
+        <li><details><summary>Matrimonio de sabuesos</summary><article><p><time datetime="2024-10-30">30 de octubre de 2024</time> · Tomo 70</p><blockquote>Tommy y Tuppence estaban casados. Pero eso no significaba que fueran a dejar de investigar.</blockquote></article></details></li>
+        <li><details><summary>Pleamares de la vida</summary><article><p><time datetime="2024-11-06">6 de noviembre de 2024</time> · Tomo 67</p><blockquote>Hércules Poirot se había retirado. Cultivaba calabazas en su jardín.</blockquote></article></details></li>
+        <li><details><summary>Parker Pyne investiga</summary><article><p><time datetime="2024-11-13">13 de noviembre de 2024</time> · Tomo 68</p><blockquote>Mr. Parker Pyne era un hombre de negocios muy particular. Su especialidad: la felicidad.</blockquote></article></details></li>
+        <li><details><summary>Poirot investiga</summary><article><p><time datetime="2024-11-20">20 de noviembre de 2024</time> · Tomo 71</p><blockquote>Hércules Poirot examinó la escena del crimen con atención. Cada detalle contaba.</blockquote></article></details></li>
+        <li><details><summary>Pasajero para Frankfurt</summary><article><p><time datetime="2024-11-27">27 de noviembre de 2024</time> · Tomo 72</p><blockquote>El avión despegó hacia Frankfurt. Entre los pasajeros había un espía.</blockquote></article></details></li>
+        <li><details><summary>Primeros casos de Poirot</summary><article><p><time datetime="2024-12-04">4 de diciembre de 2024</time> · Tomo 73</p><blockquote>Estos fueron los primeros casos que resolvió Hércules Poirot en Inglaterra.</blockquote></article></details></li>
+        <li><details><summary>Los trabajos de Hércules</summary><article><p><time datetime="2024-12-11">11 de diciembre de 2024</time> · Tomo 74</p><blockquote>Doce trabajos, como los de Hércules. Doce casos extraordinarios para Poirot.</blockquote></article></details></li>
+        <li><details><summary>Asesinato en Bardsley Mews y otras historias</summary><article><p><time datetime="2024-12-18">18 de diciembre de 2024</time> · Tomo 75</p><blockquote>Bardsley Mews era un callejón tranquilo en Londres. Hasta que ocurrió el asesinato.</blockquote></article></details></li>
+        <li><details><summary>El Pudding de Navidad y otras historias</summary><article><p><time datetime="2024-12-26">26 de diciembre de 2024</time> · Tomo 76</p><blockquote>La Navidad es tiempo de familia, alegría... y a veces, de misterio.</blockquote></article></details></li>
+        <li><details><summary>Café solo</summary><article><p><time datetime="2024-12-31">31 de diciembre de 2024</time> · Tomo 77</p><blockquote>Un café solo. Eso fue todo lo que pidió. Pero detrás de esa orden había un secreto.</blockquote></article></details></li>
+        <li><details><summary>El enigmático Mister Quin</summary><article><p><time datetime="2025-01-08">8 de enero de 2025</time> · Tomo 78</p><blockquote>Mr. Quin aparecía siempre en los momentos más inesperados. Como un fantasma.</blockquote></article></details></li>
+        <li><details><summary>Problema en Pollensa y otras historias</summary><article><p><time datetime="2025-01-15">15 de enero de 2025</time> · Tomo 79</p><blockquote>Pollensa era un lugar tranquilo en Mallorca. Hasta que llegó el problema.</blockquote></article></details></li>
+        <li><details><summary>Un Dios solitario y otros relatos</summary><article><p><time datetime="2025-01-22">22 de enero de 2025</time> · Tomo 80</p><blockquote>Un Dios solitario observaba desde el cielo. Los humanos seguían cometiendo errores.</blockquote></article></details></li>
+        <li><details><summary>Testigo de cargo y otras historias</summary><article><p><time datetime="2025-01-29">29 de enero de 2025</time> · Tomo 81</p><blockquote>El testigo de cargo subió al estrado. Su testimonio cambiaría todo.</blockquote></article></details></li>
+        <li><details><summary>La puerta del destino</summary><article><p><time datetime="2025-02-05">5 de febrero de 2025</time> · Tomo 82</p><blockquote>La puerta del destino se abrió lentamente. ¿Qué había detrás?</blockquote></article></details></li>
+        <li><details><summary>El misterio de Listerdale y otras historias</summary><article><p><time datetime="2025-02-12">12 de febrero de 2025</time> · Tomo 83</p><blockquote>Listerdale había desaparecido. Sin dejar rastro. Eso era lo extraño.</blockquote></article></details></li>
+        <li><details><summary>Autobiografía de Agatha Christie (vol. 1)</summary><article><p><time datetime="2025-02-19">19 de febrero de 2025</time> · Tomo 84</p><blockquote>Nací en Torquay, en 1890. Ésta es mi historia.</blockquote></article></details></li>
+        <li><details><summary>Autobiografía de Agatha Christie (vol. 2)</summary><article><p><time datetime="2025-02-26">26 de febrero de 2025</time> · Tomo 85</p><blockquote>He vivido una vida extraordinaria. Llena de misterio, amor y escritura.</blockquote></article></details></li>
+        </ol>
+      </section>
+    </details>
 
-      <h2>Las cajas forman estructuras</h2>
+    <details id="autora">
+      <summary>La autora</summary>
+      <section aria-labelledby="autora-titulo">
+        <h2 id="autora-titulo">Agatha Christie, la Dama del Misterio</h2>
+      <p>Agatha Christie (1891-1976) fue una escritora británica reconocida por sus novelas policíacas y de misterio. Nació en Torquay y debutó como novelista con <cite>El misterioso caso de Styles</cite>, obra en la que presentó a Hércules Poirot. Posteriormente creó a Miss Marple, otro de sus personajes más reconocidos.</p>
+      <p>Su vida estuvo relacionada con viajes, literatura y arqueología. Sus viajes a Oriente Medio junto a su segundo esposo, el arqueólogo Max Mallowan, se vincularon con escenarios y elementos presentes en algunas de sus obras. En 1971 fue nombrada Dama del Imperio Británico.</p>
+      <h3>¿Por qué es la Dama del Misterio?</h3>
+      <ul>
+        <li>Es una de las autoras más vendidas de todos los tiempos.</li>
+        <li>Creó 66 novelas policíacas y 14 colecciones de relatos.</li>
+        <li>Escribió teatro, incluida <cite>La ratonera</cite>, una de las obras teatrales más longevas.</li>
+        <li>Sus enigmas, giros inesperados y personajes memorables consolidaron su lugar en la literatura de misterio.</li>
+      </ul>
+        <p>Fuentes: <a href="https://www.agathachristie.com/about-christie">Agatha Christie Limited</a> y <a href="https://www.biografiasyvidas.com/biografia/c/christie.htm">Biografías y Vidas</a>.</p>
+      </section>
+    </details>
 
-      <p>
-        Una caja puede contener otras cajas.
-        Las etiquetas HTML describen cómo se relaciona cada parte del contenido.
-      </p>
+    <details id="lugares">
+      <summary>Los lugares de Agatha Christie</summary>
+      <section aria-labelledby="lugares-titulo">
+        <h2 id="lugares-titulo">Los lugares de Agatha Christie</h2>
+        <h3>¿Por qué afecta dónde vive nuestra autora?</h3>
+        <p>Los lugares donde vivió Agatha Christie influyeron en su obra porque aportaron experiencias, ambientes y escenarios para sus historias.</p>
+        <ul>
+          <li><strong>Torquay:</strong> su ciudad natal y una parte importante de su infancia.</li>
+          <li><strong>Francia:</strong> un lugar vinculado con sus viajes y experiencias.</li>
+          <li><strong>Oriente Medio:</strong> sus viajes con Max Mallowan estuvieron relacionados con la arqueología y con escenarios presentes en algunas novelas.</li>
+          <li><strong>Londres:</strong> una ciudad vinculada a numerosos espacios y ambientes de sus historias.</li>
+          <li><strong>Wallingford:</strong> un lugar relacionado con una etapa posterior de su vida.</li>
+        </ul>
+        <p>Sus experiencias en distintos países moldearon su visión del mundo y se convirtieron en parte del imaginario de sus novelas. La relación entre cada lugar y una obra concreta debe verificarse individualmente antes de presentarla como un dato definitivo.</p>
+      </section>
+    </details>
 
-      <article>
-
-        <h3>Una estructura contiene más estructuras</h3>
-
-        <p>
-          Este artículo está dentro de una sección y contiene
-          a su vez un título y un párrafo.
-        </p>
-
-      </article>
-
-    </section>
-
-    <section id="jerarquia">
-
-      <h2>Las etiquetas crean jerarquía</h2>
-
-      <p>
-        Un h1 representa el título principal.
-        Un h2 identifica una sección.
-        Un h3 introduce un nivel secundario.
-      </p>
-
-    </section>
-
+    <details id="adaptaciones">
+      <summary>Películas y series</summary>
+      <section aria-labelledby="adaptaciones-titulo">
+        <h2 id="adaptaciones-titulo">Libros llevados al cine y la televisión</h2>
+        <h3>Películas</h3>
+        <ul>
+          <li><cite>Muerte en el Nilo</cite> (<cite>Death on the Nile</cite>), 2022, dirigida por Kenneth Branagh.</li>
+          <li><cite>Asesinato en el Orient-Express</cite> (<cite>Murder on the Orient Express</cite>), 2017, dirigida por Kenneth Branagh.</li>
+          <li><cite>A Haunting in Venice</cite>, 2023, tercera película de la saga de Poirot dirigida y protagonizada por Kenneth Branagh.</li>
+        </ul>
+        <h3>Series y miniseries</h3>
+        <ul>
+          <li><cite>Agatha Christie's Poirot</cite>, serie británica emitida entre 1989 y 2013.</li>
+          <li><cite>Miss Marple</cite>, serie de la BBC emitida entre 2004 y 2013.</li>
+          <li><cite>The ABC Murders</cite>, miniserie de la BBC de 2018.</li>
+          <li><cite>Ordeal by Innocence</cite>, miniserie de 2018.</li>
+          <li><cite>The Pale Horse</cite>, miniserie de 2020.</li>
+          <li><cite>Why Didn't They Ask Evans?</cite>, miniserie estrenada en 2022.</li>
+          <li><cite>And Then There Were None</cite>, miniserie de la BBC de 2015.</li>
+          <li><cite>The Seven Dials Mystery</cite>, miniserie de 2023.</li>
+        </ul>
+      </section>
+    </details>
   </main>
 
-  <!--
-    FOOTER
-    Contiene información de cierre o complementaria.
-  -->
   <footer>
-
-    <p>Guía de estudio · HTML + CSS</p>
-
+    <p>Agatha Christie: El archivo de los misterios · Autora del archivo: María José Cisneros Tedy</p>
   </footer>
-
 </body>
 </html>
