@@ -19,7 +19,7 @@ CSS
 
 ---
 
-# Prompts
+# Prompts AI abierta
 
 ** Quiero construir un archivo markdown sobre los libros de Agatha Christie de la colección que salió del 2023 al 2025 de la editorial del Planeta de agostini; utiliza esta liga como base para obetener toda esa información https://www.planetadeagostini.com.mx/mx/culturales/agatha-christie. Antes de tener los libros me gustaria que utilizaras un titulo y tagline pensado en el tema de misterio de la autora. Estructura también este test: Título secundario: ¿Qué misterio eres? 
 
@@ -89,7 +89,16 @@ Todos los elementos deben mantener exactamente la misma estructura.
 - No agregues JavaScript.
 - Entrega el resultado en formato Markdown.
 
+# Prompts con visual
+
+
+
+
+
+
+
 ---
+
 
 # Addon 01 · Orden y jerarquía
 

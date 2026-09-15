@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Archivo de la colección de Agatha Christie publicada por Planeta DeAgostini México.">
   <title>Agatha Christie: El archivo de los misterios</title>
+  <link rel="stylesheet" href="https://use.typekit.net/rnw1jnb.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header>
     <p>Archivo de la colección Planeta DeAgostini México, 2023-2025</p>
-    <h1>Agatha Christie: El archivo de los misterios</h1>
-    <p><strong>Cada pista conduce a una historia. Cada historia esconde un misterio.</strong></p>
+    <h1>El gabinete de misterio</h1>
+    <p class="site-subtitle">Agatha Christie: Una colección para perderse entre pistas, secretos y enigmas.</p>
     <nav aria-label="Navegación principal">
       <ul>
         <li><a href="#test">¿Qué misterio eres?</a></li>
-        <li><a href="#coleccion">La colección</a></li>
-        <li><a href="#autora">La autora</a></li>
-        <li><a href="#lugares">Los lugares</a></li>
-        <li><a href="#adaptaciones">Películas y series</a></li>
+        <li><a href="#coleccion">La biblioteca</a></li>
+        <li><a href="#autora">Agatha Christie</a></li>
+        <li><a href="#lugares">Los escenarios del misterio</a></li>
+        <li><a href="#adaptaciones">Misterios en la pantalla</a></li>
       </ul>
     </nav>
   </header>
@@ -26,42 +27,52 @@
   <main>
     <section id="test" aria-labelledby="test-titulo">
       <h2 id="test-titulo">¿Qué misterio eres?</h2>
-      <p>Responde estas preguntas y descubre qué historia puede esconderse detrás de tu forma de pensar.</p>
+      <p class="test-intro">Responde estas preguntas y descubre qué historia puede esconderse detrás de tu forma de pensar.</p>
       <form>
         <fieldset>
           <legend>01. Cuando llegas a un lugar desconocido...</legend>
-          <label><input type="radio" name="pregunta-01"> Observo todo antes de hablar.</label>
-          <label><input type="radio" name="pregunta-01"> Empiezo a hacer preguntas.</label>
-          <label><input type="radio" name="pregunta-01"> Me dejo llevar por la situación.</label>
-          <label><input type="radio" name="pregunta-01"> Busco a alguien que parezca sospechoso.</label>
+          <ul>
+            <li><label><input type="radio" name="pregunta-01"> Observo todo antes de hablar.</label></li>
+            <li><label><input type="radio" name="pregunta-01"> Empiezo a hacer preguntas.</label></li>
+            <li><label><input type="radio" name="pregunta-01"> Me dejo llevar por la situación.</label></li>
+            <li><label><input type="radio" name="pregunta-01"> Busco a alguien que parezca sospechoso.</label></li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>02. Si algo no tiene sentido...</legend>
-          <label><input type="radio" name="pregunta-02"> Intento encontrar el detalle que todos ignoraron.</label>
-          <label><input type="radio" name="pregunta-02"> Pregunto directamente qué está pasando.</label>
-          <label><input type="radio" name="pregunta-02"> Confío en mi intuición.</label>
-          <label><input type="radio" name="pregunta-02"> Empiezo a sospechar de todos.</label>
+          <ul>
+            <li><label><input type="radio" name="pregunta-02"> Intento encontrar el detalle que todos ignoraron.</label></li>
+            <li><label><input type="radio" name="pregunta-02"> Pregunto directamente qué está pasando.</label></li>
+            <li><label><input type="radio" name="pregunta-02"> Confío en mi intuición.</label></li>
+            <li><label><input type="radio" name="pregunta-02"> Empiezo a sospechar de todos.</label></li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>03. ¿Cuál escenario elegirías para resolver un misterio?</legend>
-          <label><input type="radio" name="pregunta-03"> Un tren.</label>
-          <label><input type="radio" name="pregunta-03"> Una casa aislada.</label>
-          <label><input type="radio" name="pregunta-03"> Un hotel.</label>
-          <label><input type="radio" name="pregunta-03"> Un barco.</label>
+          <ul>
+            <li><label><input type="radio" name="pregunta-03"> Un tren.</label></li>
+            <li><label><input type="radio" name="pregunta-03"> Una casa aislada.</label></li>
+            <li><label><input type="radio" name="pregunta-03"> Un hotel.</label></li>
+            <li><label><input type="radio" name="pregunta-03"> Un barco.</label></li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>04. ¿Qué tipo de detective serías?</legend>
-          <label><input type="radio" name="pregunta-04"> El que analiza cada pista.</label>
-          <label><input type="radio" name="pregunta-04"> El que observa a las personas.</label>
-          <label><input type="radio" name="pregunta-04"> El que conecta historias y secretos.</label>
-          <label><input type="radio" name="pregunta-04"> El que nunca deja de hacer preguntas.</label>
+          <ul>
+            <li><label><input type="radio" name="pregunta-04"> El que analiza cada pista.</label></li>
+            <li><label><input type="radio" name="pregunta-04"> El que observa a las personas.</label></li>
+            <li><label><input type="radio" name="pregunta-04"> El que conecta historias y secretos.</label></li>
+            <li><label><input type="radio" name="pregunta-04"> El que nunca deja de hacer preguntas.</label></li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>05. ¿Qué te atrae más de una historia?</legend>
-          <label><input type="radio" name="pregunta-05"> Un crimen imposible.</label>
-          <label><input type="radio" name="pregunta-05"> Los secretos de los personajes.</label>
-          <label><input type="radio" name="pregunta-05"> Los giros inesperados.</label>
-          <label><input type="radio" name="pregunta-05"> Descubrir quién lo hizo.</label>
+          <ul>
+            <li><label><input type="radio" name="pregunta-05"> Un crimen imposible.</label></li>
+            <li><label><input type="radio" name="pregunta-05"> Los secretos de los personajes.</label></li>
+            <li><label><input type="radio" name="pregunta-05"> Los giros inesperados.</label></li>
+            <li><label><input type="radio" name="pregunta-05"> Descubrir quién lo hizo.</label></li>
+          </ul>
         </fieldset>
       </form>
 
@@ -70,37 +81,54 @@
         <section aria-labelledby="resultados-titulo">
           <h3 id="resultados-titulo">Resultados</h3>
           <p>Después de contestar las cinco preguntas, abre este apartado para consultar las posibilidades de tu resultado.</p>
-          <dl>
-            <dt>Asesinato en el Orient Express</dt>
-            <dd>Eres observador/a y analítico/a. Te gusta reunir pistas, encontrar contradicciones y llegar a una conclusión antes que los demás.</dd>
-            <dt>Y no quedó ninguno</dt>
-            <dd>Eres intuitivo/a y desconfiado/a. No te conformas con la primera explicación y sabes que detrás de cada persona puede existir un secreto.</dd>
-            <dt>La casa torcida</dt>
-            <dd>Eres curioso/a y observador/a. Te interesan las relaciones entre las personas y lo oculto detrás de una apariencia normal.</dd>
-            <dt>Muerte en el Nilo</dt>
-            <dd>Eres estratégico/a y atento/a a los detalles. Te gustan las historias donde las relaciones, los secretos y los motivos importan tanto como las pistas.</dd>
-            <dt>Muerte en la vicaría</dt>
-            <dd>Eres perspicaz y curioso/a. Te encanta observar a las personas y descubrir aquello que intentan esconder.</dd>
-            <dt>El espejo se rajó de lado a lado</dt>
-            <dd>Eres sensible a los detalles. Te interesa entender qué hay detrás de las apariencias y cómo el pasado puede cambiarlo todo.</dd>
-            <dt>Tragedia en tres actos</dt>
-            <dd>Eres teatral y analítico/a. Te gustan las historias llenas de personajes, sospechas y giros inesperados.</dd>
-            <dt>Noche eterna</dt>
-            <dd>Eres aventurero/a y misterioso/a. Te atraen las historias poco convencionales y de atmósfera inquietante.</dd>
-          </dl>
+          <div class="resultados-lista">
+            <article>
+              <h4 class="resultado-titulo">"Asesinato en el Orient Express"</h4>
+              <ul><li>Eres observador/a y analítico/a.</li><li>Te gusta reunir pistas, encontrar contradicciones y llegar a una conclusión antes que los demás.</li></ul>
+            </article>
+            <article>
+              <h4 class="resultado-titulo">"Y no quedó ninguno"</h4>
+              <ul><li>Eres intuitivo/a y desconfiado/a.</li><li>No te conformas con la primera explicación y sabes que detrás de cada persona puede existir un secreto.</li></ul>
+            </article>
+            <article>
+              <h4 class="resultado-titulo">"La casa torcida"</h4>
+              <ul><li>Eres curioso/a y observador/a.</li><li>Te interesan las relaciones entre las personas y todo aquello que permanece oculto detrás de una apariencia normal.</li></ul>
+            </article>
+            <article>
+              <h4 class="resultado-titulo">"Muerte en el Nilo"</h4>
+              <ul><li>Eres estratégico/a y atento/a a los detalles.</li><li>Te gustan las historias donde las relaciones, los secretos y los motivos importan tanto como las pistas.</li></ul>
+            </article>
+            <article>
+              <h4 class="resultado-titulo">"Muerte en la vicaría"</h4>
+              <ul><li>Eres perspicaz y curioso/a.</li><li>Te encanta observar a las personas y descubrir aquello que intentan esconder.</li></ul>
+            </article>
+            <article>
+              <h4 class="resultado-titulo">"El espejo se rajó de lado a lado"</h4>
+              <ul><li>Eres sensible a los detalles.</li><li>Te interesa entender qué hay detrás de las apariencias y cómo el pasado puede cambiarlo todo.</li></ul>
+            </article>
+            <article>
+              <h4 class="resultado-titulo">"Tragedia en tres actos"</h4>
+              <ul><li>Eres teatral y analítico/a.</li><li>Te gustan las historias llenas de personajes, sospechas y giros inesperados.</li></ul>
+            </article>
+            <article>
+              <h4 class="resultado-titulo">"Noche eterna"</h4>
+              <ul><li>Eres aventurero/a y misterioso/a.</li><li>Te atraen las historias poco convencionales y de atmósfera inquietante.</li></ul>
+            </article>
+          </div>
         </section>
       </details>
 
+      <h3 class="autora-frase">Antes de Poirot y Miss Marple, estaba Agatha.</h3>
       <aside aria-labelledby="presentacion-titulo">
-        <h3 id="presentacion-titulo">¿Quién es Agatha Christie?</h3>
+        <h4 id="presentacion-titulo">¿Quién es Agatha Christie?</h4>
         <p>Agatha Christie (1891-1976) fue una escritora británica reconocida por sus novelas policíacas y de misterio. Es la creadora de Hércules Poirot y Miss Marple, dos de los personajes más importantes de la literatura detectivesca.</p>
       </aside>
     </section>
 
     <details id="coleccion">
-      <summary>La colección</summary>
+      <summary>La biblioteca</summary>
       <section aria-labelledby="coleccion-titulo">
-        <h2 id="coleccion-titulo">La colección</h2>
+        <h2 id="coleccion-titulo">La biblioteca de la gran dama del misterio</h2>
       <p>La colección reúne 85 tomos. Este catálogo está ordenado por fecha de salida para mostrar cómo se publicó entre 2023, 2024 y 2025.</p>
       <p>Los resúmenes editoriales completos deben consultarse en la página oficial de Planeta DeAgostini. La información disponible en este archivo se presenta como referencia y no sustituye la sinopsis editorial de cada obra.</p>
       <p><a href="https://www.planetadeagostini.com.mx/mx/culturales/agatha-christie">Lee más sobre esta obra misteriosa en Planeta DeAgostini</a></p>
@@ -195,9 +223,9 @@
     </details>
 
     <details id="autora">
-      <summary>La autora</summary>
+      <summary>Agatha Christie</summary>
       <section aria-labelledby="autora-titulo">
-        <h2 id="autora-titulo">Agatha Christie, la Dama del Misterio</h2>
+        <h2 id="autora-titulo">La dama del misterio</h2>
       <p>Agatha Christie (1891-1976) fue una escritora británica reconocida por sus novelas policíacas y de misterio. Nació en Torquay y debutó como novelista con <cite>El misterioso caso de Styles</cite>, obra en la que presentó a Hércules Poirot. Posteriormente creó a Miss Marple, otro de sus personajes más reconocidos.</p>
       <p>Su vida estuvo relacionada con viajes, literatura y arqueología. Sus viajes a Oriente Medio junto a su segundo esposo, el arqueólogo Max Mallowan, se vincularon con escenarios y elementos presentes en algunas de sus obras. En 1971 fue nombrada Dama del Imperio Británico.</p>
       <h3>¿Por qué es la Dama del Misterio?</h3>
@@ -212,9 +240,9 @@
     </details>
 
     <details id="lugares">
-      <summary>Los lugares de Agatha Christie</summary>
+      <summary>Los escenarios del misterio</summary>
       <section aria-labelledby="lugares-titulo">
-        <h2 id="lugares-titulo">Los lugares de Agatha Christie</h2>
+        <h2 id="lugares-titulo">Tras los pasos de nuestra dama</h2>
         <h3>¿Por qué afecta dónde vive nuestra autora?</h3>
         <p>Los lugares donde vivió Agatha Christie influyeron en su obra porque aportaron experiencias, ambientes y escenarios para sus historias.</p>
         <ul>
@@ -229,9 +257,9 @@
     </details>
 
     <details id="adaptaciones">
-      <summary>Películas y series</summary>
+      <summary>Misterios en la pantalla</summary>
       <section aria-labelledby="adaptaciones-titulo">
-        <h2 id="adaptaciones-titulo">Libros llevados al cine y la televisión</h2>
+        <h2 id="adaptaciones-titulo">Historias que cobraron vida: Libros llevados al cine y a la televisión</h2>
         <h3>Películas</h3>
         <ul>
           <li><cite>Muerte en el Nilo</cite> (<cite>Death on the Nile</cite>), 2022, dirigida por Kenneth Branagh.</li>
@@ -254,6 +282,7 @@
   </main>
 
   <footer>
+    <p class="tagline"><strong>Cada pista conduce a una historia. Cada historia esconde un misterio.</strong></p>
     <p>Agatha Christie: El archivo de los misterios · Autora del archivo: María José Cisneros Tedy</p>
   </footer>
 </body>

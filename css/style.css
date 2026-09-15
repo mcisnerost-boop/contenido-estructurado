@@ -12,7 +12,9 @@
   --color-text: #171717;
   --color-accent: #5b3df5;
 
-  --font-family-base: system-ui, Arial, Helvetica, sans-serif;
+  --font-family-title: "TT Modernoir", Georgia, serif;
+  --font-family-subtitle: "TT Modernoir", Georgia, serif;
+  --font-family-body: "Warbler Banner", Georgia, serif;
 
   --font-size-body: 1rem;
   --font-size-h1: 3rem;
@@ -30,11 +32,6 @@
 
 * {
   box-sizing: border-box;
-  /*
-    Regla temporal para visualizar las cajas.
-    Puede eliminarse cuando ya no sea necesaria.
-  */
-  outline: 1px solid;
 }
 
 
@@ -51,7 +48,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
 
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-body);
   font-size: var(--font-size-body);
 }
 
@@ -65,15 +62,54 @@ body {
 */
 
 h1 {
+  font-family: var(--font-family-title);
   font-size: var(--font-size-h1);
 }
 
 h2 {
+  font-family: var(--font-family-title);
   font-size: var(--font-size-h2);
 }
 
 h3 {
+  font-family: var(--font-family-title);
   font-size: var(--font-size-h3);
+}
+
+h4,
+legend {
+  font-family: var(--font-family-title);
+}
+
+.site-subtitle,
+.test-intro {
+  font-family: var(--font-family-subtitle);
+}
+
+main > details > summary {
+  font-family: var(--font-family-title);
+}
+
+h1,
+h2,
+main > details > summary {
+  text-align: center;
+}
+
+.tagline,
+.test-intro,
+.resultado-titulo,
+.site-subtitle {
+  text-align: center;
+}
+
+.autora-frase {
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+
+.resultados-lista article {
+  margin-bottom: 1.5rem;
 }
 
 
@@ -129,6 +165,11 @@ section {
   margin-bottom: 3rem;
 }
 
-nav a {
-  margin-right: 1rem;
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none;
 }
