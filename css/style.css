@@ -8,17 +8,16 @@
 */
 
 :root {
-  --color-background: #f4f4f0;
-  --color-text: #171717;
-  --color-accent: #5b3df5;
-
-  --font-family-title: "TT Modernoir", Georgia, serif;
-  --font-family-subtitle: "TT Modernoir", Georgia, serif;
-  --font-family-body: "Warbler Banner", Georgia, serif;
-
-  --font-size-body: 1rem;
-  --font-size-h1: 3rem;
-  --font-size-h2: 2rem;
+  --color-background: #e7cbb8;
+  --color-text: #101936;
+  --color-heading: #56001e;
+  --color-accent: #56001e;
+  --font-family-title: "mina", Georgia, serif;
+  --font-family-subtitle: "tt-modernoir", Georgia, serif;
+  --font-family-body: "warbler-banner", Georgia, serif;
+  --font-size-body: 1.5rem;
+  --font-size-h1: 4rem;
+  --font-size-h2: 3rem;
   --font-size-h3: 1.25rem;
 }
 
@@ -63,22 +62,32 @@ body {
 
 h1 {
   font-family: var(--font-family-title);
+  color: var(--color-heading);
   font-size: var(--font-size-h1);
 }
 
 h2 {
   font-family: var(--font-family-title);
+  color: var(--color-heading);
   font-size: var(--font-size-h2);
+  line-height: 1.4em;
 }
 
 h3 {
   font-family: var(--font-family-title);
+  color: var(--color-heading);
   font-size: var(--font-size-h3);
 }
 
-h4,
+h4 {
+  font-family: var(--font-family-subtitle);
+  color: var(--color-heading);
+}
+
 legend {
-  font-family: var(--font-family-title);
+  font-family: "tt-modernoir", Georgia, serif;
+  font-weight: 700;
+  color: var(--color-heading);
 }
 
 .site-subtitle,
@@ -87,7 +96,9 @@ legend {
 }
 
 main > details > summary {
-  font-family: var(--font-family-title);
+  font-family: "tt-modernoir", Georgia, serif;
+  font-weight: 500;
+  color: var(--color-heading);
 }
 
 h1,
@@ -112,6 +123,48 @@ main > details > summary {
   margin-bottom: 1.5rem;
 }
 
+.hero-gabinete {
+  display: grid;
+  /* grid-template-columns: minmax(0, 1fr) minmax(220px, 0.8fr); */
+  gap: 2rem;
+  align-items: center;
+  min-height: 24rem;
+  margin-bottom: 3rem;
+}
+
+.hero-copy {
+  text-align: center;
+}
+
+.hero-copy p {
+  line-height: 1.6;
+}
+
+.hero-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  background-color: #56001e;
+  color: #fbf0f7;
+  font-family: "tt-modernoir", Georgia, serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.hero-gallery {
+  min-height: 18rem;
+  margin: 0;
+  border: 1px solid var(--color-heading);
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.coleccion-intro {
+  margin-bottom: 2rem;
+}
+
 
 /*
   ============================================================
@@ -123,6 +176,41 @@ main > details > summary {
 
 a {
   color: var(--color-accent);
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  color: #fbf0f7;
+  text-decoration: none;
+}
+
+.font-botton {
+  font-family: "tt-modernoir", Georgia, serif;
+  font-weight: 500;
+}
+
+nav a[href="#test"] {
+  background-color: #56001e;
+}
+
+nav a[href="#coleccion"] {
+  background-color: #1a2e60;
+}
+
+nav a[href="#autora"] {
+  background-color: #5d5e2f;
+  color: #facdcd;
+}
+
+nav a[href="#lugares"] {
+  background-color: #2e2021;
+}
+
+nav a[href="#adaptaciones"] {
+  background-color: #adc4ca;
+  color: #5d5e2f;
 }
 
 
@@ -168,8 +256,23 @@ section {
 nav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 0;
   margin: 1rem 0 0;
   list-style: none;
+}
+
+
+
+@media (max-width: 700px) {
+  .hero-gabinete {
+    grid-template-columns: 1fr;
+  }
+}
+
+#test ul {
+  list-style: none;
+  padding-left: .5em;
 }
