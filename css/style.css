@@ -203,6 +203,11 @@ main > details > summary {
 
 }
 
+.esquinas{
+display:flex;
+justify-content: space-between;
+
+}
 .hero-gallery {
   min-height: 18rem;
   margin: 0;
