@@ -19,6 +19,8 @@
   --font-size-h1: 4rem;
   --font-size-h2: 3rem;
   --font-size-h3: 1.25rem;
+ 
+
 }
 
 /*
@@ -39,7 +41,14 @@
   BODY
   ============================================================
 
-  Define el sistema visual base del documento.
+  Define el sistema visual base del documento.  
+  font family
+  font size
+  color
+  background color.
+  margin: 0;
+  padding: 0; 
+  line-height: 0;
 */
 body {
   margin: 0;
@@ -58,16 +67,26 @@ body {
 
   HTML define la jerarquía.
   CSS controla su representación visual.
-*/
+  h1, h2, h3 font family: var(--font -title);
+  font weight: 400
+  tamaño tipografico: cada uno con sus valores   */
 
 h1 {
   font-family: var(--font-family-title);
   color: var(--color-heading);
   font-size: var(--font-size-h1);
+  line-height: 1.2em;
 }
-
+h1 small {
+  font-size: .6em;
+  color: var(--color-text);
+  margin: 0;
+  line-height: .5em;
+  text-align: right;
+  font-size: 2rem;
+}
 h2 {
-  font-family: var(--font-family-title);
+  font-family: var(--font-family-subtitle);
   color: var(--color-heading);
   font-size: var(--font-size-h2);
   line-height: 1.4em;
@@ -77,6 +96,7 @@ h3 {
   font-family: var(--font-family-title);
   color: var(--color-heading);
   font-size: var(--font-size-h3);
+  text-align: left;
 }
 
 h4 {
@@ -102,9 +122,14 @@ main > details > summary {
 }
 
 h1,
-h2,
 main > details > summary {
   text-align: center;
+}
+
+h2,
+main > details > summary {
+  text-align: left;
+  color: var(--color-heading);
 }
 
 .tagline,
@@ -130,26 +155,52 @@ main > details > summary {
   align-items: center;
   min-height: 24rem;
   margin-bottom: 3rem;
+  line-height: 1.4em;
 }
 
 .hero-copy {
-  text-align: center;
+  line-height: 1.4;
+  text-align: left;
 }
 
-.hero-copy p {
-  line-height: 1.6;
+.hero-copyp1 {
+  line-height: 1.2em;
+  text-align: center;
+  font-family: "tt-modernoir", Georgia, serif;
+  font-size: 3rem;
+  color: #56001e;
+  margin-bottom: 0;
 }
+
+.hero-copyp2 {
+  line-height: 1em;
+  text-align: center;
+  font-family: "tt-modernoir", Georgia, serif;
+  font-size: 1.8rem;
+  color: #56001e;
+  margin-top: 0;
+}
+
+/*.hero-copy p {
+  line-height: 1.6;
+  text-align: center;
+}*/
 
 .hero-cta {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 1.2rem;
+  margin-top: 1.5rem;
+  margin-right: 0.75rem;
+  padding: .9rem 1.2rem;
+  line-height: 1.2;
+  vertical-align: middle;
   border-radius: 999px;
-  background-color: #56001e;
-  color: #fbf0f7;
+  background-color: #5d5e2f;
+  color: #e7cbb8;
   font-family: "tt-modernoir", Georgia, serif;
   font-weight: 500;
   text-decoration: none;
+  text-align: center;
+
 }
 
 .hero-gallery {
@@ -189,6 +240,7 @@ nav a {
 .font-botton {
   font-family: "tt-modernoir", Georgia, serif;
   font-weight: 500;
+  margin: 0 0.5rem;
 }
 
 nav a[href="#test"] {
