@@ -200,7 +200,7 @@ main > details > summary {
 
 h2,
 main > details > summary {
-  text-align: left;
+  text-align: center;
   color: var(--color-heading);
 }
 
@@ -615,6 +615,7 @@ font-size: var(--font-size-h2);
 color: #56001e;
 text-align: center;
 font-family: var(--font-family-subtitle);
+font-size: var(--font-size-h2);
 }
 
 .lugares{
@@ -629,6 +630,12 @@ font-family: var(--font-family-subtitle);
 text-align: center;
 color: var(--color-background);
 font-size: var(--font-size-body);
+}
+
+.descrip{
+font-family: var(--font-family-subtitle);
+text-align: center;
+color: #e7cbb8; 
 }
 
 /*
@@ -651,12 +658,6 @@ nav a {
   text-decoration: none;
 }
 
-.font-botton5 {
-  font-family: "tt-modernoir", Georgia, serif;
-  margin: 0 0.5rem;
-  color: #493431;
-  
-}
 
 .font-botton {
   font-family: "tt-modernoir", Georgia, serif;
@@ -686,6 +687,13 @@ nav a {
   font-family: "tt-modernoir", Georgia, serif;
   margin: 0 0.5rem;
   color: #101936;
+}
+
+.font-botton5 {
+  font-family: "tt-modernoir", Georgia, serif;
+  margin: 0 0.5rem;
+  background-color: #493431;
+  color: #e7cbb8;
 }
 
 nav a#test {
