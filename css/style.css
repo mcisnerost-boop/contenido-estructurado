@@ -22,6 +22,7 @@
   --font-size-h2: 3rem;
   --font-size-h3: 1.25rem;
   --font-size-h4: .9rem;
+  --font-weight-sub: 300;
  
 
 }
@@ -573,7 +574,9 @@ color: #493431;
 }
 
 .coleccion-intro {
-  margin-bottom: 2rem;
+margin-bottom: 2rem;
+font-weight: var(--font-weight-sub);
+
 }
 
 .coleccion-titulo{
@@ -611,6 +614,7 @@ font-size: var(--font-size-h2);
 .lugares-tit{
 color: #56001e;
 text-align: center;
+font-family: var(--font-family-subtitle);
 }
 
 .lugares{
@@ -647,6 +651,13 @@ nav a {
   text-decoration: none;
 }
 
+.font-botton5 {
+  font-family: "tt-modernoir", Georgia, serif;
+  margin: 0 0.5rem;
+  color: #493431;
+  
+}
+
 .font-botton {
   font-family: "tt-modernoir", Georgia, serif;
   margin: 0 0.5rem;
@@ -677,23 +688,23 @@ nav a {
   color: #101936;
 }
 
-nav a[href="#test"] {
+nav a#test {
   background-color: #56001e;
 }
 
-nav a[href="#coleccion"] {
+nav a#coleccion {
   background-color: #5d5e2f;
 }
 
-nav a[href="#autora"] {
+nav a#autora {
   background-color: #dad9b8;
 }
 
-nav a[href="#lugares"] {
+nav a#lugares {
   background-color: #e7cbb8;
 }
 
-nav a[href="#adaptaciones"] {
+nav a#adaptaciones {
   background-color: #adc4ca;
   
 }
@@ -760,4 +771,10 @@ nav ul {
 #test ul {
   list-style: none;
   padding-left: .5em;
+}
+
+.subtitulo{
+color: #56001e; 
+text-align: center;
+font-family: var(--font-family-title);
 }
