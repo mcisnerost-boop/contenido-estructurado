@@ -22,6 +22,8 @@
   --font-size-h2: 3rem;
   --font-size-h3: 1.25rem;
   --font-size-h4: .9rem;
+  --font-size-h5: 2rem;
+  --font-size-h6:1.9rem;
   --font-weight-sub: 300;
  
 
@@ -56,10 +58,8 @@
 */
 body {
   margin: 0;
-
   background-color: var(--color-background);
   color: var(--color-text);
-
   font-family: var(--font-family-body);
   font-size: var(--font-size-body);
 }
@@ -457,7 +457,7 @@ display: inline-block;
   font-weight: 500;
   text-decoration: none;
   text-align: center;
-  
+  text-wrap: balance;
 
 }
 
@@ -475,7 +475,6 @@ display: inline-block;
   font-weight: 500;
   text-decoration: none;
   text-align: center;
-
 }
 
 
@@ -492,6 +491,44 @@ display: inline-block;
   font-weight: 500;
   text-decoration: none;
   text-align: center;
+}
+
+.hero-lugar{
+  font-family: "tt-modernoir", Georgia, serif;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  color: #56001e;
+  font-size: var(--font-size-h5);
+  width: 50%;
+}
+
+.hero-lugar3{
+  font-family: "tt-modernoir", Georgia, serif;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  color: #56001e;
+  font-size: var(--font-size-h5);
+  width: 50%;
+}
+
+.hero-lugar5{
+  font-family: "tt-modernoir", Georgia, serif;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  color: #56001e;
+  font-size: var(--font-size-h5);
+  width: 50%;
+}
+
+.hero-pelis{
+  font-family:var(--font-family-body2);
+  font-size:var(--font-size-h6);
+  color:#493431;
+  text-align: left;
+  text-wrap: balance;
 
 }
 
@@ -530,10 +567,44 @@ display: inline-block;
 }
 
 
-.esquinas{
-display:flex;
-justify-content: space-between;
+.esquinas{display:flex;justify-content: space-between;gap: 1em;align-items: center;}
+
+.hero-lugar2{
+  font-family: var(--font-family-body);
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-heading);
+  font-size: var(--font-size-h3);
+  width: 50%;
+  padding: 0 1em;
+  text-wrap: balance;
 }
+
+.hero-lugar4{
+  font-family: var(--font-family-body);
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-heading);
+  font-size: var(--font-size-h3);
+  width: 50%;
+  padding: 0 1em;
+  text-wrap: balance;
+}
+
+.hero-lugar6{
+  font-family: var(--font-family-body);
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-heading);
+  font-size: var(--font-size-h3);
+  width: 50%;
+  padding: 0 1em;
+  text-wrap: balance;
+}
+
 
 .hero-gallery {
   min-height: 18rem;
@@ -586,10 +657,49 @@ font-family: var(--font-family-subtitle);
 font-weight: 300;
 }
 
+.coleccion-titulo2{
+color: var(--color-heading);
+text-align: center;
+font-family: var(--font-family-subtitle);
+font-weight: 300;
+}
+
+.peliculas{
+color: var(--color-text);
+text-align: left;
+font-family: var(--font-family-title);
+font-weight: 300;
+font-size: var(--font-size-h5);
+}
+
+.peliculas2{
+color: var(--color-text);
+text-align: left;
+font-family: var(--font-family-title);
+font-weight: 300;
+font-size: var(--font-size-h5);
+}
+
 .info{
 text-align: center;
 font-weight: 200;
 font-family: var(--font-family-body2);
+}
+
+.info2{
+  text-align: center;
+  color:#56001e;
+  font-weight: 300;
+  font-size:var(--font-size-h3);
+  text-wrap: balance;
+}
+
+.info3{
+  text-align: center;
+  color:#56001e;
+  font-weight: 100;
+  font-size:var(--font-size-h2);
+  font-family: var(--font-family-subtitle);
 }
 
 .porque{
@@ -621,7 +731,7 @@ font-size: var(--font-size-h2);
 .lugares{
 text-align: center;
 color: #56001e;
-font-size: var(--font-size-h3);
+font-size: var(--font-size-h5);
 font-family: var(--font-family-body);
 }
 
@@ -785,4 +895,14 @@ nav ul {
 color: #56001e; 
 text-align: center;
 font-family: var(--font-family-title);
+}
+
+img {
+  max-width: 100%;
+}
+
+.classTomos{
+  width: 50%;
+  margin: 0 auto;
+  display: block;
 }
