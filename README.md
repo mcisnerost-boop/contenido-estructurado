@@ -35,7 +35,6 @@ Guía de consulta sobre HTML.
 Explica la estructura básica de un documento, etiquetas, atributos, semántica, jerarquía, enlaces, imágenes y la relación entre elementos.
 
 
-
 style.css
 Los estilos visuales aplicados al sitio.
 
