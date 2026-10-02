@@ -17,3 +17,8 @@ Se trabajan referencias de:
 
 El moodboard completo se encuentra desarrollado en Adobe Illustrator que mandé en pdf con conjunto de otras referencias visuales; Y funciona como referencia visual para definir la apariencia y el lenguaje gráfico de la página web.
 
+
+# Referencias completas también se encuentran en img-referencias (carpeta)
+# Moodboard
+
+Están en brightspace como pdf con la demás información que saque estructurada y redactada aparte de la que se encuentra en el repositorio. 
